@@ -1,0 +1,4 @@
+CREATE VERTEX Person ( primary_id ssn STRING, firstName STRING, lastName STRING)
+CREATE UNDIRECTED EDGE FRIENDS (FROM Person, TO Person, effectiveDate DATETIME)
+
+CREATE GRAPH @graphname@(Person, FRIENDS)
